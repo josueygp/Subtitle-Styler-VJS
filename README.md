@@ -15,7 +15,7 @@ now go to  chrome://extensions/
 now click on 'Load Unpacked' and select the unzipped folder
 ![image](https://github.com/user-attachments/assets/d5f8fdb3-631d-49e2-b941-fbb07980f84f)
 
-ahora haga click en 'Load Unpacked' y seleccione la carpeta descomprimida
+now click on 'Load Unpacked' and select the unzipped folder
 ![image](https://github.com/user-attachments/assets/7e2de596-aa5c-409d-86fb-75128cce20af)
 
 Ready, now the extension should appear:
