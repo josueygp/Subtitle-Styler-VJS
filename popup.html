@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customize Subtitles</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 10px;
+            background-color: #f4f4f4;
+        }
+        .option-group {
+            margin-bottom: 15px;
+        }
+        .option-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .option-group select,
+        .option-group input {
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        .button-container {
+            text-align: right;
+        }
+        
+        .save-button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            display: none;
+        }
+        .save-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h2>Customize Subtitles</h2>
+    <div class="option-group">
+        <label for="enableExtension">Enable Extension</label>
+        <input type="checkbox" id="enableExtension">
+    </div>
+    <div class="option-group">
+        <label for="color">Color:</label>
+        <select id="color">
+            <option value="white">White</option>
+            <option value="yellow">Yellow</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+        </select>
+    </div>
+    <div class="mb-4">
+        <label for="opacity" class="block text-gray-700 font-semibold mb-2">Opacity:</label>
+        <input type="range" id="opacity" min="0" max="1" step="0.01" value="1" class="w-full">
+        <span id="opacityValue" class="text-gray-700 ml-2">1.00</span>
+    </div>
+
+    <div class="option-group">
+        <label for="text-bg-color">Text Background Color:</label>
+        <select id="text-bg-color">
+            <option value="transparent">Transparent</option>
+            <option value="black">Black</option>
+            <option value="white">White</option>
+        </select>
+    </div>
+    <div class="option-group">
+        <label for="caption-area-bg-color">Caption Area Background Color:</label>
+        <select id="caption-area-bg-color">
+            <option value="transparent">Transparent</option>
+            <option value="black">Black</option>
+            <option value="white">White</option>
+        </select>
+    </div>    
+    <div class="mb-4">
+        <label for="caption-area-bg-opacity" class="block text-gray-700 font-semibold mb-2">Caption Area Background Opacity:</label>
+        <input type="range" id="caption-area-bg-opacity" min="0" max="1" step="0.01" value="1" class="w-full">
+        <span id="captionBgOpacityValue" class="text-gray-700 ml-2">1.00</span>
+    </div>
+    <div class="option-group">
+        <label for="font-size">Font Size:</label>
+        <select id="font-size">
+            <option value="100%">100%</option>
+            <option value="125%">125%</option>
+            <option value="150%">150%</option>
+            <option value="165%">165%</option>
+            <option value="200%">200%</option>
+        </select>
+    </div>
+    <div class="option-group">
+        <label for="text-border-style">Text Border Style:</label>
+        <select id="text-border-style">
+            <option value="none">None</option>
+            <option value="uniform">Uniform</option>
+            <option value="shadow">Shadow</option> 
+        </select>
+    </div>
+    <div class="option-group">
+        <label for="text-font">Text Font:</label>
+        <select id="text-font">
+            <option value="Trebuchet MS">Trebuchet MS</option>
+            <option value="sans-serif">Sans-serif</option>
+            <option value="serif">Serif</option>
+            <option value="monospace">Monospace</option>
+        </select>
+    </div>
+    <div class="button-container">
+        <button id="save-button" class="save-button">Save</button>
+    </div>
+    <script src="popup.js"></script>
+    <script src="customize_subtitles.js"></script>
+</body>
+</html>
