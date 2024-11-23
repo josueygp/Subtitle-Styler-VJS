@@ -1,7 +1,7 @@
 # Subtitle-Styler-VJS
  
-Subtitle-Styler-VJS is an extension for Chromium, this with the purpose of modifying and saving the preference of the styles that the user wants. 
-We worked on the basis of what is used with 'VideoJS' technologies.
+Subtitle-Styler-VJS is an extension for Chromium, this in order to modify and save the preference of the styles that the user wants.
+It was worked based on what is used with 'VideoJS' technologies.
 
 Installation:
 Download the Zip package of the project
